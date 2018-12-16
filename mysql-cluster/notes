@@ -1,0 +1,15 @@
+INSERT INTO mysql_servers(hostgroup_id, hostname, port) VALUES (2, '192.168.33.11', 3306);
+INSERT INTO mysql_servers(hostgroup_id, hostname, port) VALUES (2, '192.168.33.12', 3306);
+INSERT INTO mysql_servers(hostgroup_id, hostname, port) VALUES (2, '192.168.33.13', 3306);
+
+INSERT INTO mysql_users(username, password, default_hostgroup) VALUES ('wordpress', 'wordpress', 2);
+
+
+define('AUTH_KEY',         'rm:m(U-#G`zk,MwcBt-yjerC);UxfEPvuD]$t{BWRI>|SWN+itKfIVo1.S/}iG*C');
+define('SECURE_AUTH_KEY',  'f_nfqI@Tv~*2(Jk0WxA.yu^`QF-*oJuB{|d]Oaz#@p={V,^#ux,w[{u}k1Bs{y1u');
+define('LOGGED_IN_KEY',    '8LXWbESo{GH)6.Pfijtj#z;>E(qzl@Uj7e(!f+-GP.V8Y|`|zs3Eb~9t>wm5-$IW');
+define('NONCE_KEY',        'ZFsch!?4G|SdiU4a+Yt(0(tHUzsn)[46]VYR|jSjCSf7moJE54s62c|!{+-|7`xS');
+define('AUTH_SALT',        'h:K^,*2j2;dcojXQv1hUU|sv=d!we$GJ_BqB{q[9k$o+!EoJ3G3Y8&B}2AS*~0?:');
+define('SECURE_AUTH_SALT', 'Agbo`w_|^<2gR8fP4-$4?!23Y.hj.m5zfTMm;IJ6k7f/r<;Yez&42qqpJ*1e5c%A');
+define('LOGGED_IN_SALT',   'Gf41+w%(fKA;6Ro-j|&F@C_<l[AUK]AHw9!ushc*UUw6KSK!+QvL!Z4^|)[-9,Ls');
+define('NONCE_SALT',       ']S|Wk3U;HkI^)$Ax8q ;]$s7W?|+S@VZ}-`S;+tB-Y{!|]5zz]t}gD~j+5o0a@W|');
